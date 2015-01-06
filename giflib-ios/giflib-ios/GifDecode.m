@@ -302,7 +302,7 @@ close_context:
     
 close_gif:
     free( rowBuffer );
-    DGifCloseFile( gifFile );
+    DGifCloseFile( gifFile, &errorCode );
     gifFile = NULL;
     return errorCode;
 }

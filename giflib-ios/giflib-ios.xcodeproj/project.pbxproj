@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43B6BDBD1A5CA4D90035D4A4 /* dgif_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 43B6BDA91A5CA4D90035D4A4 /* dgif_lib.c */; };
+		43B6BDBE1A5CA4D90035D4A4 /* egif_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 43B6BDAA1A5CA4D90035D4A4 /* egif_lib.c */; };
+		43B6BDBF1A5CA4D90035D4A4 /* gif_err.c in Sources */ = {isa = PBXBuildFile; fileRef = 43B6BDAB1A5CA4D90035D4A4 /* gif_err.c */; };
+		43B6BDC01A5CA4D90035D4A4 /* gif_font.c in Sources */ = {isa = PBXBuildFile; fileRef = 43B6BDAC1A5CA4D90035D4A4 /* gif_font.c */; };
+		43B6BDC11A5CA4D90035D4A4 /* gif_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 43B6BDAD1A5CA4D90035D4A4 /* gif_hash.c */; };
+		43B6BDC21A5CA4D90035D4A4 /* gifalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 43B6BDB11A5CA4D90035D4A4 /* gifalloc.c */; };
+		43B6BDC31A5CA4D90035D4A4 /* quantize.c in Sources */ = {isa = PBXBuildFile; fileRef = 43B6BDB21A5CA4D90035D4A4 /* quantize.c */; };
+		43B6BDC51A5CA4D90035D4A4 /* neuquant32.c in Sources */ = {isa = PBXBuildFile; fileRef = 43B6BDB71A5CA4D90035D4A4 /* neuquant32.c */; };
 		885BD8751648BBBE00F182B4 /* GifDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 885BD8741648BBBE00F182B4 /* GifDecode.m */; };
 		885BD8771648BDFB00F182B4 /* GifDecode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 885BD8731648BBBE00F182B4 /* GifDecode.h */; };
 		885BD8851648FCCA00F182B4 /* GifPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = 885BD8841648FCCA00F182B4 /* GifPlayback.m */; };
@@ -14,15 +22,7 @@
 		88765F60163787E30011D31E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88765F5F163787E30011D31E /* Foundation.framework */; };
 		88765F65163787E40011D31E /* giflib_ios.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88765F64163787E40011D31E /* giflib_ios.h */; };
 		88765F67163787E40011D31E /* giflib_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 88765F66163787E40011D31E /* giflib_ios.m */; };
-		88765F76163788410011D31E /* dgif_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 88765F6D163788410011D31E /* dgif_lib.c */; };
-		88765F77163788410011D31E /* egif_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 88765F6E163788410011D31E /* egif_lib.c */; };
-		88765F78163788410011D31E /* gif_err.c in Sources */ = {isa = PBXBuildFile; fileRef = 88765F6F163788410011D31E /* gif_err.c */; };
-		88765F79163788410011D31E /* gif_font.c in Sources */ = {isa = PBXBuildFile; fileRef = 88765F70163788410011D31E /* gif_font.c */; };
-		88765F7A163788410011D31E /* gif_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 88765F71163788410011D31E /* gif_hash.c */; };
-		88765F7B163788410011D31E /* gifalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 88765F75163788410011D31E /* gifalloc.c */; };
-		88765F7C163788B50011D31E /* gif_lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88765F74163788410011D31E /* gif_lib.h */; };
 		88765FE31637D9C50011D31E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88765FE21637D9C50011D31E /* UIKit.framework */; };
-		88B846411647522E0005FF5A /* neuquant32.c in Sources */ = {isa = PBXBuildFile; fileRef = 88B8463F1647522E0005FF5A /* neuquant32.c */; };
 		88B846451647BE500005FF5A /* GifEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B846441647BE500005FF5A /* GifEncode.m */; };
 		88B846461647CDDE0005FF5A /* GifEncode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88B846431647BE500005FF5A /* GifEncode.h */; };
 /* End PBXBuildFile section */
@@ -37,7 +37,6 @@
 				885BD8861648FCDD00F182B4 /* GifPlayback.h in CopyFiles */,
 				885BD8771648BDFB00F182B4 /* GifDecode.h in CopyFiles */,
 				88B846461647CDDE0005FF5A /* GifEncode.h in CopyFiles */,
-				88765F7C163788B50011D31E /* gif_lib.h in CopyFiles */,
 				88765F65163787E40011D31E /* giflib_ios.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +44,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		43B6BDA91A5CA4D90035D4A4 /* dgif_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dgif_lib.c; sourceTree = "<group>"; };
+		43B6BDAA1A5CA4D90035D4A4 /* egif_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = egif_lib.c; sourceTree = "<group>"; };
+		43B6BDAB1A5CA4D90035D4A4 /* gif_err.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gif_err.c; sourceTree = "<group>"; };
+		43B6BDAC1A5CA4D90035D4A4 /* gif_font.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gif_font.c; sourceTree = "<group>"; };
+		43B6BDAD1A5CA4D90035D4A4 /* gif_hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gif_hash.c; sourceTree = "<group>"; };
+		43B6BDAE1A5CA4D90035D4A4 /* gif_hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gif_hash.h; sourceTree = "<group>"; };
+		43B6BDAF1A5CA4D90035D4A4 /* gif_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gif_lib.h; sourceTree = "<group>"; };
+		43B6BDB01A5CA4D90035D4A4 /* gif_lib_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gif_lib_private.h; sourceTree = "<group>"; };
+		43B6BDB11A5CA4D90035D4A4 /* gifalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gifalloc.c; sourceTree = "<group>"; };
+		43B6BDB21A5CA4D90035D4A4 /* quantize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quantize.c; sourceTree = "<group>"; };
+		43B6BDB71A5CA4D90035D4A4 /* neuquant32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = neuquant32.c; sourceTree = "<group>"; };
+		43B6BDB81A5CA4D90035D4A4 /* neuquant32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neuquant32.h; sourceTree = "<group>"; };
 		885BD8731648BBBE00F182B4 /* GifDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifDecode.h; sourceTree = "<group>"; };
 		885BD8741648BBBE00F182B4 /* GifDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifDecode.m; sourceTree = "<group>"; };
 		885BD8831648FCCA00F182B4 /* GifPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifPlayback.h; sourceTree = "<group>"; };
@@ -54,18 +65,7 @@
 		88765F63163787E30011D31E /* giflib-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "giflib-ios-Prefix.pch"; sourceTree = "<group>"; };
 		88765F64163787E40011D31E /* giflib_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = giflib_ios.h; sourceTree = "<group>"; };
 		88765F66163787E40011D31E /* giflib_ios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = giflib_ios.m; sourceTree = "<group>"; };
-		88765F6D163788410011D31E /* dgif_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dgif_lib.c; sourceTree = "<group>"; };
-		88765F6E163788410011D31E /* egif_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = egif_lib.c; sourceTree = "<group>"; };
-		88765F6F163788410011D31E /* gif_err.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gif_err.c; sourceTree = "<group>"; };
-		88765F70163788410011D31E /* gif_font.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gif_font.c; sourceTree = "<group>"; };
-		88765F71163788410011D31E /* gif_hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gif_hash.c; sourceTree = "<group>"; };
-		88765F72163788410011D31E /* gif_hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gif_hash.h; sourceTree = "<group>"; };
-		88765F73163788410011D31E /* gif_lib_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gif_lib_private.h; sourceTree = "<group>"; };
-		88765F74163788410011D31E /* gif_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gif_lib.h; sourceTree = "<group>"; };
-		88765F75163788410011D31E /* gifalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gifalloc.c; sourceTree = "<group>"; };
 		88765FE21637D9C50011D31E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		88B8463F1647522E0005FF5A /* neuquant32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = neuquant32.c; sourceTree = "<group>"; };
-		88B846401647522E0005FF5A /* neuquant32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neuquant32.h; sourceTree = "<group>"; };
 		88B846431647BE500005FF5A /* GifEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifEncode.h; sourceTree = "<group>"; };
 		88B846441647BE500005FF5A /* GifEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifEncode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,18 +83,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43B6BDA81A5CA4D90035D4A4 /* giflib */ = {
+			isa = PBXGroup;
+			children = (
+				43B6BDA91A5CA4D90035D4A4 /* dgif_lib.c */,
+				43B6BDAA1A5CA4D90035D4A4 /* egif_lib.c */,
+				43B6BDAB1A5CA4D90035D4A4 /* gif_err.c */,
+				43B6BDAC1A5CA4D90035D4A4 /* gif_font.c */,
+				43B6BDAD1A5CA4D90035D4A4 /* gif_hash.c */,
+				43B6BDAE1A5CA4D90035D4A4 /* gif_hash.h */,
+				43B6BDAF1A5CA4D90035D4A4 /* gif_lib.h */,
+				43B6BDB01A5CA4D90035D4A4 /* gif_lib_private.h */,
+				43B6BDB11A5CA4D90035D4A4 /* gifalloc.c */,
+				43B6BDB21A5CA4D90035D4A4 /* quantize.c */,
+			);
+			name = giflib;
+			path = "giflib-ios/giflib";
+			sourceTree = "<group>";
+		};
+		43B6BDB31A5CA4D90035D4A4 /* pngnq */ = {
+			isa = PBXGroup;
+			children = (
+				43B6BDB71A5CA4D90035D4A4 /* neuquant32.c */,
+				43B6BDB81A5CA4D90035D4A4 /* neuquant32.h */,
+			);
+			name = pngnq;
+			path = "giflib-ios/pngnq";
+			sourceTree = "<group>";
+		};
 		885BD8801648CE4600F182B4 /* gif_lib */ = {
 			isa = PBXGroup;
 			children = (
-				88765F6D163788410011D31E /* dgif_lib.c */,
-				88765F6E163788410011D31E /* egif_lib.c */,
-				88765F6F163788410011D31E /* gif_err.c */,
-				88765F70163788410011D31E /* gif_font.c */,
-				88765F71163788410011D31E /* gif_hash.c */,
-				88765F72163788410011D31E /* gif_hash.h */,
-				88765F73163788410011D31E /* gif_lib_private.h */,
-				88765F74163788410011D31E /* gif_lib.h */,
-				88765F75163788410011D31E /* gifalloc.c */,
 			);
 			name = gif_lib;
 			sourceTree = "<group>";
@@ -115,8 +134,6 @@
 		885BD8821648CE7C00F182B4 /* Encode */ = {
 			isa = PBXGroup;
 			children = (
-				88B846401647522E0005FF5A /* neuquant32.h */,
-				88B8463F1647522E0005FF5A /* neuquant32.c */,
 				88B846431647BE500005FF5A /* GifEncode.h */,
 				88B846441647BE500005FF5A /* GifEncode.m */,
 			);
@@ -126,6 +143,8 @@
 		88765F51163787E30011D31E = {
 			isa = PBXGroup;
 			children = (
+				43B6BDA81A5CA4D90035D4A4 /* giflib */,
+				43B6BDB31A5CA4D90035D4A4 /* pngnq */,
 				88765F61163787E30011D31E /* giflib-ios */,
 				88765F5E163787E30011D31E /* Frameworks */,
 				88765F5D163787E30011D31E /* Products */,
@@ -219,15 +238,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B6BDBE1A5CA4D90035D4A4 /* egif_lib.c in Sources */,
 				88765F67163787E40011D31E /* giflib_ios.m in Sources */,
-				88765F76163788410011D31E /* dgif_lib.c in Sources */,
-				88765F77163788410011D31E /* egif_lib.c in Sources */,
-				88765F78163788410011D31E /* gif_err.c in Sources */,
-				88765F79163788410011D31E /* gif_font.c in Sources */,
-				88765F7A163788410011D31E /* gif_hash.c in Sources */,
-				88765F7B163788410011D31E /* gifalloc.c in Sources */,
-				88B846411647522E0005FF5A /* neuquant32.c in Sources */,
+				43B6BDC51A5CA4D90035D4A4 /* neuquant32.c in Sources */,
+				43B6BDC31A5CA4D90035D4A4 /* quantize.c in Sources */,
+				43B6BDC11A5CA4D90035D4A4 /* gif_hash.c in Sources */,
+				43B6BDBD1A5CA4D90035D4A4 /* dgif_lib.c in Sources */,
+				43B6BDBF1A5CA4D90035D4A4 /* gif_err.c in Sources */,
 				88B846451647BE500005FF5A /* GifEncode.m in Sources */,
+				43B6BDC21A5CA4D90035D4A4 /* gifalloc.c in Sources */,
+				43B6BDC01A5CA4D90035D4A4 /* gif_font.c in Sources */,
 				885BD8751648BBBE00F182B4 /* GifDecode.m in Sources */,
 				885BD8851648FCCA00F182B4 /* GifPlayback.m in Sources */,
 			);

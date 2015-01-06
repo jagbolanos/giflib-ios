@@ -207,8 +207,9 @@ close_context:
 }
 
 - ( void )close {
+    int errorCode;
     if ( _gifFileOut )
-        EGifCloseFile( _gifFileOut );
+        EGifCloseFile( _gifFileOut, &errorCode );
     _gifFileOut = NULL;
     if ( _optimize ) {
         CGContextRelease( _gifContext );
@@ -228,6 +229,7 @@ close_context:
            loopCount:(short)numLoop
             optimize:(BOOL)optimize {
     if ( self = [ super init ]) {
+        int errorCode;
         _gifFileOut = EGifOpenFileName( destinationFile.UTF8String, NO, &_error );
         if ( _gifFileOut == NULL ) return self;
         
@@ -238,33 +240,33 @@ close_context:
         // Put image description
         if ( EGifPutScreenDesc( _gifFileOut, imgSize.width, imgSize.height, 8, 0, NULL ) == GIF_ERROR ) {
             _error = _gifFileOut->Error;
-            EGifCloseFile( _gifFileOut );
+            EGifCloseFile( _gifFileOut, &errorCode );
             _gifFileOut = NULL;
             return self;
         }
         // put Application Extenstion
         if ( EGifPutExtensionLeader( _gifFileOut, APPLICATION_EXT_FUNC_CODE ) == GIF_ERROR ) {
             _error = _gifFileOut->Error;
-            EGifCloseFile( _gifFileOut );
+            EGifCloseFile( _gifFileOut, &errorCode  );
             _gifFileOut = NULL;
             return self;
         }
         if ( EGifPutExtensionBlock( _gifFileOut, 11, "NETSCAPE2.0" ) == GIF_ERROR ) {
             _error = _gifFileOut->Error;
-            EGifCloseFile( _gifFileOut );
+            EGifCloseFile( _gifFileOut, &errorCode  );
             _gifFileOut = NULL;
             return self;
         }
         GifByteType appData[3] = {1, numLoop & 0xff, ( numLoop >> 8 ) & 0xff};
         if ( EGifPutExtensionBlock( _gifFileOut, 3, appData ) == GIF_ERROR ) {
             _error = _gifFileOut->Error;
-            EGifCloseFile( _gifFileOut );
+            EGifCloseFile( _gifFileOut, &errorCode  );
             _gifFileOut = NULL;
             return self;
         }
         if ( EGifPutExtensionTrailer( _gifFileOut ) == GIF_ERROR ) {
             _error = _gifFileOut->Error;
-            EGifCloseFile( _gifFileOut );
+            EGifCloseFile( _gifFileOut, &errorCode  );
             _gifFileOut = NULL;
             return self;
         }

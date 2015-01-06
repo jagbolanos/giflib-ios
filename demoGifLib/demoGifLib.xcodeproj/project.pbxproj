@@ -33,13 +33,6 @@
 			remoteGlobalIDString = 88765F5C163787E30011D31E;
 			remoteInfo = "giflib-ios";
 		};
-		6B69E07B163EE4D800E886D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6B69E072163EE4CA00E886D2 /* giflib-ios.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 88765F5B163787E30011D31E;
-			remoteInfo = "giflib-ios";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -174,7 +167,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				6B69E07C163EE4D800E886D2 /* PBXTargetDependency */,
 			);
 			name = demoGifLib;
 			productName = demoGifLib;
@@ -253,14 +245,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6B69E07C163EE4D800E886D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "giflib-ios";
-			targetProxy = 6B69E07B163EE4D800E886D2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6B2338DE163D6A6900CDD63C /* InfoPlist.strings */ = {
